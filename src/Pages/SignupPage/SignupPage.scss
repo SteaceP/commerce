@@ -1,0 +1,14 @@
+.sign-in-and-sign-up {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem auto;
+
+}
+
+@media (max-width: 780px) {
+    .sign-in-and-sign-up {
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+}
