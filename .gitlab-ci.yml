@@ -1,0 +1,9 @@
+image: node:lts-alpine3.13
+
+all_tests:
+  script:
+   - npm install yarn -g
+   - yarn install
+   - yarn build
+   - yarn global add serve
+   - serve -s build
