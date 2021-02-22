@@ -24,11 +24,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Yarn CLI
-      uses: CultureHQ/actions-yarn@v1.0.1
-      with:
-        args: install
-
     - name: Cache dependencies
       uses: actions/cache@v2
       with:
