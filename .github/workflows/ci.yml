@@ -13,14 +13,14 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x]
+        node-version: ['12']
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@master
+      uses: actions/checkout@v2.3.4
 
-    - name: Set up Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@master
+    - name: Set up Node.js environment ${{ matrix.node-version }}
+      uses: actions/setup-node@v2.1.5
       with:
         node-version: ${{ matrix.node-version }}
 
@@ -46,3 +46,4 @@ jobs:
       with:
         branch: gh-pages # The branch the action should deploy to.
         folder: build # The folder the action should deploy.
+        clean: true
