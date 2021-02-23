@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
@@ -36,6 +36,10 @@ jobs:
 
     - name: Build 🔧
       run: npm run build --if-present
+      
+    - name: Install rsync 📚
+      run: |
+        apt-get update && apt-get install -y rsync
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.0.0
