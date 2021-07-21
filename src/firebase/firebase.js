@@ -3,13 +3,13 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const config = {
-  apiKey: "AIzaSyCWWSZ6603WAQZnuirm6DmWtp4L75c3DBc",
-  authDomain: "e-commerce-crown.firebaseapp.com",
-  projectId: "e-commerce-crown",
-  storageBucket: "e-commerce-crown.appspot.com",
-  messagingSenderId: "902106903683",
-  appId: "1:902106903683:web:53ded04f303144194897b6",
-  measurementId: "G-FG420WNL1V",
+  apiKey: "AIzaSyDL5V874Ju9PTRWJ8hMuerVnbjYpe0KRwI",
+  authDomain: "react-firebase-blog-fa4c7.firebaseapp.com",
+  projectId: "react-firebase-blog-fa4c7",
+  storageBucket: "react-firebase-blog-fa4c7.appspot.com",
+  messagingSenderId: "487295841277",
+  appId: "1:487295841277:web:d6b946f2147453a8cd9f94",
+  measurementId: "G-RVLWYQBYL8",
 };
 
 firebase.initializeApp(config);

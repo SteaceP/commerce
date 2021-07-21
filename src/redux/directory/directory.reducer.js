@@ -35,8 +35,8 @@ const initialState = {
   ],
 };
 
-const directoryReducer = (state = initialState, action) => {
-  switch (action.type) {
+const directoryReducer = (state = initialState, { type }) => {
+  switch (type) {
     default:
       return state;
   }
