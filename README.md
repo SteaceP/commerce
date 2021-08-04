@@ -3,10 +3,9 @@
 # E-Commerce made with React.js and Firebase
 
 ---
+## [Live on Heroku](https://steace-blog-live.herokuapp.com/)
 
 # **DOCKER**
-
----
 
 ## Development
 
