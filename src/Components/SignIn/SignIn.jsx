@@ -21,7 +21,25 @@ class SignIn extends Component {
       await auth.signInWithEmailAndPassword(email, password);
       this.setState({ email: "", password: "" });
     } catch (error) {
-      console.log(error);
+      // Handle Errors here.
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      if (errorCode === "auth/weak-password") {
+        alert(errorMessage);
+      }
+      else if (errorCode === "auth/too-many-requests") {
+        alert(errorMessage)
+      }
+      else if (errorCode === "auth/cancelled-popup-request") {
+        alert(errorMessage)
+      }
+      else if (errorCode === "auth/user-not-found") {
+        alert(errorMessage)
+      }
+      else {
+        alert(errorMessage);
+      }
+      console.error(error);
     }
   };
 
