@@ -14,7 +14,6 @@
 ### Build
 
 `docker build -t steace:commerce-cra-dev .`
-`
 
 ### Run
 
